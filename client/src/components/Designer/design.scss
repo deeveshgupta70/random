@@ -1,6 +1,7 @@
 @import "../../css-config/mixins.scss";
 body {
     color: black;
+    background-color: rgb(221, 238, 254);
   }
   
   .container {
@@ -8,7 +9,7 @@ body {
     
   }
 
-h2{
+.heading{
 color: rgb(57, 137, 216);
 text-align: center;
 flex: none;
