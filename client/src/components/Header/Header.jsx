@@ -1,7 +1,7 @@
 import { useEffect, useState, useContext } from "react";
 import { useNavigate } from "react-router-dom";
 
-// import logo from "../../assets/category/outfitv_logo.jpg";
+import logo from "../../assets/category/outfitv_logo.jpg";
 import { AiOutlineUserAdd } from "react-icons/ai";
 //import { TbSearch } from "react-icons/tb";
 import { CgShoppingCart } from "react-icons/cg";
@@ -37,8 +37,8 @@ const Header = () => {
                     <li>About</li>
                     <li>Contact</li>
                 </ul>
-                {/* <div className="center"><img src={logo} /></div> */}
-                <div className="center"><h2>OUTFITV</h2></div>
+                 <div className="center"><img src={logo} /></div> 
+                {/* <div className="center"><h2>OUTFITV</h2></div> */}
                 <div className="right">
                     <AiOutlineUserAdd />
                     {/* <TbSearch /> */}
