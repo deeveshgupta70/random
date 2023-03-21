@@ -5,7 +5,7 @@ import { TextField, Button, Container, Stack,Box} from '@mui/material';
 const design = () => {
   return (
       <div class="container">
-          <h2>Upload Design</h2>
+          <h1 class="heading">UPLOAD DESIGN</h1>
       <Container fixed>
         <Box sx={{ height: '78vh' }}> 
       <form>
