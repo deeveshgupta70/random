@@ -16,6 +16,7 @@ const design = () => {
             required
             fullWidth
             sx={{ marginBottom: 4 }}
+            focused
           />
           <TextField
             type="text"
@@ -25,6 +26,7 @@ const design = () => {
             fullWidth
             multiline={true}
             sx={{ marginBottom: 4 }}
+            focused
           />
         <TextField
           type="text"
@@ -33,6 +35,7 @@ const design = () => {
           required
           fullWidth
           sx={{ marginBottom: 4 }}
+          focused
         />
         <Stack spacing={2} direction="row" sx={{marginBottom: 4}}> 
         <TextField
