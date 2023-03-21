@@ -39,14 +39,16 @@
         }
         .center {
             margin-right:18px;
-//             font-size: 22px;
-//             font-weight: 1200;
+            margin-top: 1rem;
+            // font-size: 22px;
+            // font-weight: 1200;
             cursor: pointer;
             @include md{
-//                 font-size: 36px;
-                position: absolute;
-                left: 50%;
-                transform: translateX(-20%);
+               // font-size: 36px;
+               // position: absolute;
+                  margin-top: 1rem;
+                //left: 50%;
+               // transform: translateX(-0%);
             }
         }
         
@@ -69,7 +71,7 @@
                 span{
                     min-width: 20px;
                     text-align: center;
-                    background: #8e2de2;
+                    background: rgb(57,137,216);
                     padding: 2.5px;
                     position: absolute;
                     top: -5px;
