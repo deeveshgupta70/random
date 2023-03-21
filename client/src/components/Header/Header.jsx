@@ -1,7 +1,7 @@
 import { useEffect, useState, useContext } from "react";
 import { useNavigate } from "react-router-dom";
 
-import logo from "../../assets/category/outfitv_logo.jpg";
+import logo from "../../assets/category/outfitv_logo_bg.jpg";
 import { AiOutlineUserAdd } from "react-icons/ai";
 //import { TbSearch } from "react-icons/tb";
 import { CgShoppingCart } from "react-icons/cg";
