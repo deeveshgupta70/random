@@ -1,72 +1,32 @@
-import "./design.scss";
-import { TextField, Button, Container, Stack,Box} from '@mui/material';
+import { BrowserRouter, Routes, Route } from "react-router-dom";
 
+import Header from "./components/Header/Header";
+import Footer from "./components/Footer/Footer";
+import Home from "./components/Home/Home";
+import Login from "./components/Login/Login";
+import Designer from "./components/Designer/Designer";
+import Category from "./components/Category/Category";
+import SingleProduct from "./components/SingleProduct/SingleProduct";
+import Newsletter from "./components/Footer/Newsletter/Newsletter";
+import AppContext from "./utils/context";
+    
+function App() {
+    return (
+        <BrowserRouter>
+            <AppContext>
+                <Header />
+                <Routes>
+                    <Route path="/" element={<Home />} />
+                    <Route path="/login" element={<Login/>} />
+                    <Route path="/Designer" element={<Designer/> } />
+                  <Route path="/category/:id" element={<Category />} />
+                  <Route path="/product/:id" element={<SingleProduct />} />
+                </Routes>
+                <Newsletter />
+                <Footer />
+            </AppContext>
+        </BrowserRouter>
+    );
+}
 
-const design = () => {
-  return (
-      <div class="container">
-          <h1 class="heading">UPLOAD DESIGN</h1>
-      <Container fixed>
-        <Box sx={{ height: '78vh' }}> 
-      <form>
-          <TextField
-            type="text"
-            variant='outlined'  
-            label="Product Name"
-            required
-            fullWidth
-            sx={{ marginBottom: 4 }}
-            focused
-          />
-          <TextField
-            type="text"
-            variant='outlined'
-            label="Description"
-            required
-            fullWidth
-            multiline={true}
-            sx={{ marginBottom: 4 }}
-            focused
-          />
-        <TextField
-          type="text"
-          variant='outlined'
-          label="Price"
-          required
-          fullWidth
-          sx={{ marginBottom: 4 }}
-          focused
-        />
-        <Stack spacing={2} direction="row" sx={{marginBottom: 4}}> 
-        <TextField
-          type="file"
-          variant='outlined'
-          label="Product Image"
-          required
-          fullWidth
-          sx={{ marginBottom: 2 }}
-          focused
-        />
-        <TextField
-          type="file"
-          variant='outlined'
-          label="Product Design"
-          required
-          fullWidth
-          sx={{ marginBottom: 2 }}
-          focused
-        />
-        </Stack>
-        
-        <Button variant="contained" color="success" type="submit">Upload</Button>
-        <Button variant="contained" color="error" type="cancel" sx={{marginLeft:2}}>cancel</Button>
-      </form>
-      </Box>
-      </Container>
-
-
-    </div>
-  );
-};
-
-export default design;
+export default App;
