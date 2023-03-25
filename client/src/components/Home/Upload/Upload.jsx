@@ -39,9 +39,9 @@ const downloadImg = () =>{
             </div>
             <div className="right1">
                 <MdOutlineTransferWithinAStation/>
-                    <div className="your-look">
-                        onClick={downloadImg}
-                    <label>Get Your Digital Look</label>
+                <div className="your-look">
+                    
+                <label>Get Your Digital Look</label>
                 </div>
                 
                 
@@ -53,3 +53,4 @@ const downloadImg = () =>{
     </div>
 };
 export default Upload;
+
