@@ -1,16 +1,11 @@
 @import "../../../css-config/mixins.scss";
 .hero-vdo {
+    margin: 2rem 3.5rem;
     padding: 40px 0;
     position:relative;
-    
-    //background-image: linear-gradient(to right, #8e2de2, #4a00e0);
-    background-image: url("../../../assets/Untitled\ design\ \(4\).png");
-    //background-image: url("../../../assets/banners2.jpg");
-    background-size: cover;
     @include md {
-        height: calc(100vh - 80px);
-        background-size: cover;
-       // background-repeat: no-repeat;
+        height: calc(80vh - 120px);
+        
     }
     .content {
         height: 100%;
@@ -18,8 +13,6 @@
         justify-content: flex-end;
         align-items: center;
         flex-direction: column-reverse;
-        max-width: calc(100% - 20px);
-        margin: 0 auto;
         position: relative;
         @include md {
             flex-direction: row;
@@ -28,7 +21,6 @@
         .intro-vdo {
             position: relative;
             z-index: 9;
-            width: 200px;
             margin-bottom: 20px;
             @include md {
                 width: 500px;
@@ -48,7 +40,6 @@
             display: flex;
             flex-direction: column;
             align-items: center;
-            
             @include md {
                 position: absolute;
                 left: 16px;
@@ -59,50 +50,62 @@
             @include xxl {
                 left: 0;
             }
-            h1 {
-                font-size: 80px;
-                font-weight: 700;
+            h5{
+                padding-top: 1.2rem;
+                font-size: 25px;
+                font-weight: 100;
                 line-height: 1;
-                color: rgb(7, 6, 6);
+                color: rgb(11, 10, 10);
                 margin-bottom: 20px;
                 @include md {
-                    font-size: 140px;
-                }
+                    font-size: 30px;
+                } 
             }
-            p {
-                max-width: 300px;
-                font-size: 14px;
-                line-height: 20px;
+            h2 {
+                font-size: 50px;
+                font-weight: 400;
+                line-height: 1;
+                color: rgb(67, 67, 67);
                 margin-bottom: 20px;
                 @include md {
-                    max-width: 500px;
-                    font-size: 16px;
-                    line-height: 28px;
-                    margin-bottom: 40px;
+                    font-size: 60px;
                 }
             }
-            .ctas {
-                display: flex;
-                justify-content: center;
-                gap: 20px;
+           
+            h4{
+                font-size: 20px;
+                font-weight: 100;
+                line-height: 1;
+                color: rgb(49, 48, 48);
+                margin-bottom: 20px;
+                @include md {
+                    font-size: 30px;
+                }
+            }
+           
                 .vdo-cta {
                     text-transform: uppercase;
                     font-size: 13px;
                     font-weight: 500;
                     width: fit-content;
                     border: 2px solid rgb(7, 6, 6);
+                    border-radius: 20px;
                     padding: 10px 20px;
                     transition: all ease 0.3s;
                     cursor: pointer;
-                    &.v2 {
-                        background-color: rgb(7, 6, 6);
-                        color: rgb(248, 241, 241);
-                    }
+                    background-color: rgb(42, 33, 33);
+                    color: rgb(248, 241, 241);
                     &:hover {
                         opacity: 0.6;
                     }
                 }
-            }
+            
         }
+    }
+    .video-js .vjs-big-play-button{
+        border-radius: 100%;
+        height: 50px;
+        width: 50px;
+        margin-left: -14px;
     }
 }
