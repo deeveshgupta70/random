@@ -1,16 +1,18 @@
 import "./Products.scss";
 import Carousel from 'react-multi-carousel';
 import 'react-multi-carousel/lib/styles.css';
-import Prod1 from "../../assets/products/prods1.jpg";
-import Prod2 from "../../assets/products/prods2.jpg";
-import Prod3 from "../../assets/products/prods3.jpg";
-import Prod4 from "../../assets/products/prods4.jpg";
-import Prod5 from "../../assets/products/prods5.jpg";
-import Prod6 from "../../assets/products/prods6.jpg";
-import Prod7 from "../../assets/products/prods7.jpg";
-import Prod8 from "../../assets/products/prods8.jpg";
-import Prod9 from "../../assets/products/prods9.jpg";
-import Prod10 from "../../assets/products/prods10.webp";
+import Prod1 from "../../assets/products/prod1.png";
+import Prod2 from "../../assets/products/prod2.png";
+import Prod3 from "../../assets/products/prod3.png";
+import Prod4 from "../../assets/products/prod4.png";
+import Prod5 from "../../assets/products/prod5.png";
+import Prod6 from "../../assets/products/prod6.png";
+import Prod7 from "../../assets/products/prod7.png";
+import Prod8 from "../../assets/products/prod8.png";
+import Prod9 from "../../assets/products/prod9.png";
+import Prod10 from "../../assets/products/prod10.png";
+import Prod11 from "../../assets/products/prod11.png";
+
 export default function Products() {
     const responsive = {
         superLargeDesktop: {
@@ -39,7 +41,7 @@ export default function Products() {
                 <div className="card">
                     <img className="product--image" src={Prod1} alt="" />
                     <h3>Dress</h3>  
-                    <p className="price">$20.99</p>
+                    <p className="price">&#8377;899</p>
                     <p>
                         <button>Add to Cart</button>
                     </p>
@@ -48,7 +50,7 @@ export default function Products() {
                <div className="card">
                     <img className="product--image" src={Prod2} alt="" />
                     <h3>Dress</h3>  
-                    <p className="price">$20.99</p>
+                    <p className="price">&#8377;1599</p>
                     <p>
                         <button>Add to Cart</button>
                     </p>
@@ -57,7 +59,7 @@ export default function Products() {
                 <div className="card">
                     <img className="product--image" src={Prod3} alt="" />
                     <h3>Dress</h3>  
-                    <p className="price">$20.99</p>
+                    <p className="price">&#8377;799</p>
                     <p>
                         <button>Add to Cart</button>
                     </p>
@@ -66,7 +68,7 @@ export default function Products() {
                 <div className="card">
                     <img className="product--image" src={Prod4} alt="" />
                     <h3>Dress</h3>  
-                    <p className="price">$20.99</p>
+                    <p className="price">&#8377;2599</p>
                     <p>
                         <button>Add to Cart</button>
                     </p>
@@ -75,7 +77,7 @@ export default function Products() {
                 <div className="card">
                     <img className="product--image" src={Prod5} alt="" />
                     <h3>Dress</h3>  
-                    <p className="price">$20.99</p>
+                    <p className="price">&#8377;1999</p>
                     <p>
                         <button>Add to Cart</button>
                     </p>
@@ -84,7 +86,7 @@ export default function Products() {
                <div className="card">
                     <img className="product--image" src={Prod6} alt="" />
                     <h3>Dress</h3>  
-                    <p className="price">$20.99</p>
+                    <p className="price">&#8377;599</p>
                     <p>
                         <button>Add to Cart</button>
                     </p>
@@ -93,7 +95,7 @@ export default function Products() {
                 <div className="card">
                     <img className="product--image" src={Prod7} alt="" />
                     <h3>Dress</h3>  
-                    <p className="price">$20.99</p>
+                    <p className="price">&#8377;549</p>
                     <p>
                         <button>Add to Cart</button>
                     </p>
@@ -102,7 +104,7 @@ export default function Products() {
                 <div className="card">
                     <img className="product--image" src={Prod8} alt="" />
                     <h3>Dress</h3>  
-                    <p className="price">$20.99</p>
+                    <p className="price">&#8377;1199</p>
                     <p>
                         <button>Add to Cart</button>
                     </p>
@@ -111,7 +113,7 @@ export default function Products() {
                 <div className="card">
                     <img className="product--image" src={Prod9} alt="" />
                     <h3>Dress</h3>  
-                    <p className="price">$20.99</p>
+                    <p className="price">&#8377;699</p>
                     <p>
                         <button>Add to Cart</button>
                     </p>
@@ -120,7 +122,16 @@ export default function Products() {
                 <div className="card">
                     <img className="product--image" src={Prod10} alt="" />
                     <h3>Dress</h3>  
-                    <p className="price">$20.99</p>
+                    <p className="price">&#8377;549</p>
+                    <p>
+                        <button>Add to Cart</button>
+                    </p>
+                </div>
+                {/* prod11 */}
+                <div className="card">
+                    <img className="product--image" src={Prod11} alt="" />
+                    <h3>Dress</h3>  
+                    <p className="price">&#8377;1499</p>
                     <p>
                         <button>Add to Cart</button>
                     </p>
