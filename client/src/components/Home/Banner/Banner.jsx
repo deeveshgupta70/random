@@ -6,11 +6,11 @@ const Banner = () => {
         <div className="content">
         {/* <img className="banner-img" src={BannerImg} alt="" /> */}
             <div className="text-content">
-            <h1>SALES</h1>
+            <h1>V-INSPIRE</h1>
             <p>
-                Convallis interdum purus adipiscing dis parturient
-                posuere ac a quam a eleifend montes parturient posuere
-                curae tempor
+                Welcome to the future of fashion now you can buy clothes
+                without harming the nature. just upload your photo and get 
+                your digital look.
                 </p>
                 
             <div className="ctas">
