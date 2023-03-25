@@ -1,3 +1,4 @@
+@import "../../css-config/mixins.scss";
 #root {
     max-width: 1280px;
     margin: 0 auto;
@@ -7,19 +8,22 @@
   
   h1 {
     margin: 3rem auto 3rem;
+    @include md{
+      margin-top: 6rem;
+    }
     
   }
   
   .product--image {
     width: 100%;
-    height: 18em;
-    object-fit: cover;
+    height: 20em;
+    object-fit:contain;
   }
   
   .card {
     box-shadow: 0 4px 8px 0 rgba(0, 0, 0, 0.2);
     max-width: 320px;
-    margin: auto 3.5rem;
+    margin: 0 3.5rem;
     text-align: center;
     font-family: arial;
   }
