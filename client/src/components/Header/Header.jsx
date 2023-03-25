@@ -26,32 +26,38 @@ const Header = () => {
     useEffect(() => {
         window.addEventListener("scroll", handleScroll);
     }, []);
+    const { cartCount,showCart,setShowCart }= useContext(Context);
 
     return (
         <>
         < header className={`main-header ${scrolled ? 'sticky-header' : ""}`}>
             <div className="header-content">
-                <ul className="left">
-                    <li>Home</li>
-                    <li>Product</li>
-                    <li>About</li>
-                    <li>Contact</li>
+            <ul className="left">
+                    <li onClick={() => navigate("/")}>Home</li>
+                    <li onClick={() => navigate("/")}>Product</li>
+                    <li onClick={() => navigate("/")}>About</li>
+                    <li onClick={() => navigate("/")}>Contact</li>
                 </ul>
-                <div className="center"><img src={logo} /></div>
-                {/* <div className="center"><h2>OUTFITV</h2></div> */}
+                {/* <div className="center"><img src={logo} /></div> */}
+                <div className="center"><h2>OUTFITV</h2></div>
                 <div className="right">
                     <AiOutlineUserAdd />
-                    {/* <TbSearch /> */}
+                    <TbSearch onClick={() =>setSearchModal(true)} />
                     <AiOutlineHeart />
-                    <span className="cart-icon">
+                    <span className="cart-icon"
+                          onClick={() => setShowCart(true)}
+                    >
                         <CgShoppingCart />
-                        <span>5</span>
+                        {!!cartCount && <span>{cartCount}</span>}
+                        {/* <span>5</span> */}
                     </span>
                 </div>
             </div>
 
         </header>
-        </>
+        {searchModal && <Search setSearchModal={setSearchModal}/>}
+        {showCart  && < Cart />}
+      </>
     );
 };
 
